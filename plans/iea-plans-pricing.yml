@@ -1,0 +1,71 @@
+name: IEA Data Plans and Pricing
+description: The International Energy Agency offers tiered subscription plans for its data products and API access. All subscriptions are sold on an annual basis and are priced in EUR. Purchases can be made by credit card through the IEA data portal. The IEA also provides some free data through the .Stat Data Explorer and the Monthly Electricity Statistics data browser.
+url: https://www.iea.org/data-and-statistics/data-sets
+contact: datasales@iea.org
+plans:
+  - name: Free Data Access
+    description: Free access to select IEA data through the online data browser and .Stat Data Explorer. Includes Monthly Electricity Statistics (accessible free on the IEA website), energy statistics charts and explorers, and downloadable CSV exports for select public datasets.
+    label: Free
+    price: 0
+    currency: EUR
+    unit: year
+    features:
+      - Monthly Electricity Statistics via IEA website
+      - Energy Statistics Data Browser
+      - End-Use Prices Data Explorer
+      - SDMX-formatted CSV downloads for select datasets
+      - Charts and data visualizations
+  - name: IEA Statistics Package (ISP)
+    description: Comprehensive bundle combining Energy Prices, OECD Energy Prices and Taxes Quarterly, and World Energy Prices Monthly services. Provides data across sectors for 150 countries going back to 1970, covering gasoline, diesel, natural gas, electricity, LPG, fuel oil, coal, and other products. Does not include Emissions Factors or monthly oil and gas data.
+    label: Statistics Package
+    price_on_request: true
+    currency: EUR
+    unit: year
+    contact: datasales@iea.org
+    features:
+      - Energy Prices (150 countries, back to 1970)
+      - OECD Energy Prices and Taxes Quarterly
+      - World Energy Prices Monthly
+      - .Stat Data Explorer access
+      - CSV and SDMX download formats
+      - 1, 5, or 10 user licence options
+  - name: Emissions Factors Package
+    description: Monthly and quarterly CO2 emission factors for electricity generation for 52 countries, covering data from 2015 onwards. Delivered via subscription with online access through the .Stat platform.
+    label: Emissions Factors
+    price_on_request: true
+    currency: EUR
+    unit: year
+    contact: datasales@iea.org
+    features:
+      - CO2 emission factors for 52 countries
+      - Monthly and quarterly data from 2015
+      - .Stat platform access
+      - CSV and SDMX download formats
+  - name: World Energy Statistics
+    description: Key energy statistics for 156 countries and 35 regional aggregates in original units covering coal, oil, natural gas, renewables, electricity, and heat from 1971 to the most recent year available.
+    label: World Energy Statistics
+    price_on_request: true
+    currency: EUR
+    unit: year
+    contact: datasales@iea.org
+    features:
+      - 156 countries + 35 regional aggregates
+      - Data from 1971 to present
+      - All energy carriers (coal, oil, gas, renewables, electricity, heat)
+      - Original physical units
+      - .Stat Data Explorer access
+      - 1, 5, or 10 user licence options
+  - name: Real-Time Emissions Factors API
+    description: API access delivering up-to-hourly CO2 intensity and emissions data from the power sector. Approximately 100 data points per country per day. Requires separate subscription purchase through the IEA data portal.
+    label: Real-Time Emissions API
+    price_on_request: true
+    currency: EUR
+    unit: year
+    contact: datasales@iea.org
+    features:
+      - Up-to-hourly CO2 intensity data
+      - Power sector emissions coverage
+      - ~100 data points per country per day
+      - Bearer token API authentication
+      - REST API endpoint access
+      - JSON data format

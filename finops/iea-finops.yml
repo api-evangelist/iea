@@ -1,0 +1,33 @@
+name: IEA API FinOps
+description: Financial operations guidance for managing IEA data product and API subscriptions. IEA data products are sold as annual subscriptions priced in EUR, purchasable by credit card through the IEA data portal. Budget planning should account for per-product licensing, user-count tiers, and the renewal cycle. The IEA also publishes an annual price list (IEAprices{year}.pdf) available from iea.blob.core.windows.net.
+url: https://www.iea.org/data-and-statistics/data-sets
+pricing_document: https://iea.blob.core.windows.net/assets/5d3782ce-0649-4b4a-bc0d-40f4a8138bac/IEAprices2025.pdf
+contact: datasales@iea.org
+guidance:
+  - name: Subscription Model
+    description: IEA sells data products as annual subscriptions. Pricing is in EUR and available upon request or in the annual IEA Product Prices document. Credit card purchases can be made directly through the IEA data portal.
+  - name: User Licence Tiers
+    description: Many IEA data products offer 1-user, 5-user, and 10-user licence options. Choose the tier that matches your team's concurrent access needs. Underbuying user licences leads to access conflicts; overbuying adds unnecessary cost.
+  - name: Free vs Paid Data Audit
+    description: Before purchasing, audit which IEA datasets you need. Monthly Electricity Statistics and select charts are freely accessible on the IEA website. The .Stat Data Explorer provides free browsing of some data. Only purchase subscriptions for datasets not available freely.
+  - name: API vs Download Access
+    description: The Real-Time Emissions Factors API is a separate purchasable product distinct from the bulk data download subscriptions. If your use case only requires periodic bulk downloads (CSV/SDMX), a download-only subscription may be more cost-effective than an API access subscription.
+  - name: Bundle Discounts
+    description: The IEA Statistics Package (ISP) bundles Energy Prices, OECD Energy Prices and Taxes Quarterly, and World Energy Prices Monthly at a potentially lower combined cost than purchasing each product individually. Evaluate bundles against individual product needs before purchasing.
+  - name: Token Management
+    description: API tokens are tied to subscriptions and revoke on regeneration. Manage tokens centrally and avoid unnecessary token rotation, as regenerating a token immediately invalidates all active integrations using the old token. Store tokens securely using environment variables or a secrets manager, never in source code.
+  - name: Annual Renewal Planning
+    description: All IEA subscriptions renew annually. Set calendar reminders 60 days before renewal to assess whether usage justifies continued subscription. Pull usage logs from your integration to confirm the API is actively used before renewing.
+  - name: Cost Allocation
+    description: For teams consuming IEA data across multiple projects, allocate subscription costs proportionally by project or team using internal chargeback. Tag API usage in your internal logging by project ID to generate accurate per-project cost reports.
+cost_drivers:
+  - Data product subscriptions (annual, per product)
+  - User licence count (1, 5, or 10 concurrent users)
+  - Real-Time Emissions API access (separate from bulk download subscriptions)
+  - Multiple product bundles vs individual product pricing
+optimization_tips:
+  - Use free IEA data browser and .Stat Explorer before purchasing
+  - Audit actual concurrent users before selecting user licence tier
+  - Purchase the IEA Statistics Package bundle if needing multiple statistics products
+  - Evaluate real-time API need vs periodic bulk SDMX/CSV download
+  - Contact datasales@iea.org to negotiate multi-year or multi-product discounts

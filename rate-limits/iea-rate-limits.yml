@@ -1,0 +1,29 @@
+name: IEA API Rate Limits
+description: The IEA API enforces rate limits on programmatic access to its data products. Specific numeric limits are not publicly documented; they vary by subscription tier and product. Bearer token authentication is required for all API calls. API keys can be activated or deactivated at any time from the user account Settings under the Releases API section, and generating a new token revokes all previous tokens.
+url: https://www.iea.org/documentation
+limits:
+  - name: Real-Time Emissions Factors API
+    description: Rate limits apply per API key for the Real-Time Emissions Factors API. The data is updated up to hourly, so polling more frequently than once per hour per country provides no benefit. Contact IEA at datasales@iea.org for specific rate limit thresholds applicable to your subscription.
+    requests_per_day: not_published
+    requests_per_minute: not_published
+    data_granularity: up_to_hourly
+    polling_recommendation: once_per_hour
+    overage_policy: Contact IEA support for rate limit enforcement details
+  - name: Data Products API
+    description: API access to purchased data products (World Energy Balances, World Energy Statistics, Energy Prices, Emissions Factors) is governed by the subscription licence. Multi-user licences (1, 5, or 10 users) define the number of concurrent authenticated sessions permitted. Specific request-per-minute limits are not publicly disclosed.
+    concurrent_users_options:
+      - 1
+      - 5
+      - 10
+    rate_limit_details: not_published
+    overage_policy: Additional user licences required for concurrent access beyond purchased tier
+authentication:
+  type: Bearer Token
+  description: All IEA API requests require a Bearer token in the Authorization header. Tokens are tied to active product subscriptions and can be managed in Settings > Releases API within the user account. Generating a new token immediately revokes all existing tokens.
+  header: Authorization
+  format: "Bearer {token}"
+  token_management_url: https://www.iea.org/account
+  notes:
+    - Tokens can be activated or deactivated at any time
+    - Generating a new token revokes all older tokens
+    - API key availability depends on having an active product subscription

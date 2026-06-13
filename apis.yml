@@ -1,0 +1,84 @@
+aid: iea
+name: International Energy Agency (IEA)
+description: The International Energy Agency (IEA) provides a REST API for accessing global energy statistics, renewables data, CO2 emissions factors, monthly electricity generation data, oil market reports, and energy policy information. The IEA API enables programmatic access to authoritative energy data covering 150+ countries and offering up-to-hourly real-time emissions factors alongside comprehensive historical datasets.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Energy
+  - Electricity
+  - CO2
+  - Emissions
+  - Renewables
+  - Oil
+  - Statistics
+  - Climate
+apis:
+  - name: IEA Real-Time Emissions Factors API
+    description: Provides up-to-hourly CO2 intensity and emissions data from the power sector for countries worldwide. Data is sourced from transmission system operators, market operators, and statistical agencies, combined with annual emission factors from national statistical offices.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.iea.org/data-and-statistics/data-product/real-time-emissions-factors-api-access
+    baseURL: https://api.iea.org
+    tags:
+      - Emissions
+      - CO2
+      - Real-Time
+      - Electricity
+      - Power Sector
+    properties:
+      - type: Documentation
+        url: https://www.iea.org/documentation
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/plans/iea-plans-pricing.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/rate-limits/iea-rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/finops/iea-finops.yml
+  - name: IEA Data Products API
+    description: Programmatic access to IEA's suite of purchased data products including World Energy Balances, World Energy Statistics, Monthly Electricity Statistics, Energy Prices, and Emissions Factors. Uses bearer token authentication tied to active product subscriptions.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.iea.org/documentation
+    baseURL: https://api.iea.org
+    tags:
+      - Energy Statistics
+      - World Energy Balances
+      - Monthly Electricity
+      - Energy Prices
+      - Data Products
+    properties:
+      - type: Documentation
+        url: https://www.iea.org/documentation
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/plans/iea-plans-pricing.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/rate-limits/iea-rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/finops/iea-finops.yml
+common:
+  - type: Website
+    url: https://www.iea.org
+  - type: Documentation
+    url: https://www.iea.org/documentation
+  - type: GitHubOrg
+    url: https://github.com/IEA-Paris
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/international-energy-agency
+  - type: Blog
+    url: https://www.iea.org/newsroom
+  - type: Pricing
+    url: https://www.iea.org/data-and-statistics/data-sets
+  - type: StatusPage
+    url: https://www.iea.org/help-centre/accessing-iea-products-and-services
+  - type: X
+    url: https://x.com/IEA
+  - type: Plans
+    url: plans/iea-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/iea-rate-limits.yml
+  - type: FinOps
+    url: finops/iea-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
