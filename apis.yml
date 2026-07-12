@@ -57,6 +57,8 @@ apis:
       - type: FinOps
         url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/finops/iea-finops.yml
 common:
+  - type: DomainSecurity
+    url: security/iea-domain-security.yml
   - type: Website
     url: https://www.iea.org
   - type: Documentation
