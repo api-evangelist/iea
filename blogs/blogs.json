@@ -3,11 +3,13 @@
   "url": "https://www.iea.org/newsroom",
   "feeds": [
     {
-      "source": "https://www.iea.org/newsroom",
+      "source": "https://www.linkedin.com/company/international-energy-agency",
+      "feed_url": "https://www.linkedin.com/company/international-energy-agency",
+      "title": "",
       "saved": 0,
-      "error": "HTTP 403 Forbidden on blog listing"
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:47:48Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0
 }
