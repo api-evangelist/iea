@@ -1,7 +1,19 @@
 aid: iea
 name: International Energy Agency (IEA)
 description: The International Energy Agency (IEA) provides a REST API for accessing global energy statistics, renewables data, CO2 emissions factors, monthly electricity generation data, oil market reports, and energy policy information. The IEA API enables programmatic access to authoritative energy data covering 150+ countries and offering up-to-hourly real-time emissions factors alongside comprehensive historical datasets.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iea.png
 url: https://raw.githubusercontent.com/api-evangelist/iea/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
