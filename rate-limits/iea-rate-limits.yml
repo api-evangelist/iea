@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: IEA API Rate Limits
 description: The IEA API enforces rate limits on programmatic access to its data products. Specific numeric limits are not publicly documented; they vary by subscription tier and product. Bearer token authentication is required for all API calls. API keys can be activated or deactivated at any time from the user account Settings under the Releases API section, and generating a new token revokes all previous tokens.
 url: https://www.iea.org/documentation

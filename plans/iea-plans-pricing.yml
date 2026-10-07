@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: IEA Data Plans and Pricing
 description: The International Energy Agency offers tiered subscription plans for its data products and API access. All subscriptions are sold on an annual basis and are priced in EUR. Purchases can be made by credit card through the IEA data portal. The IEA also provides some free data through the .Stat Data Explorer and the Monthly Electricity Statistics data browser.
 url: https://www.iea.org/data-and-statistics/data-sets
