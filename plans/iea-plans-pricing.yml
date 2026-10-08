@@ -73,3 +73,46 @@ plans:
       - Bearer token API authentication
       - REST API endpoint access
       - JSON data format
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units:
+  - period
+  plans:
+  - name: Free Data Access
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: IEA Statistics Package (ISP)
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Emissions Factors Package
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: World Energy Statistics
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Real-Time Emissions Factors API
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - period
+    periods: []
