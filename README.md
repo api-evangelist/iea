@@ -64,41 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The International Energy Agency (IEA) provides a REST API and data subscription services for accessing authoritative global energy statistics, renewables data, CO2 emissions factors, monthly electricity generation data, oil market reports, and energy policy information. IEA data covers 150+ countries with historical datasets going back to 1971 and real-time emissions data updated up to hourly.
+The International Energy Agency (IEA) provides a REST API for accessing global energy statistics, renewables data, CO2 emissions factors, monthly electricity generation data, oil market reports, and energy policy information. The IEA API enables programmatic access to authoritative energy data covering 150+ countries and offering up-to-hourly real-time emissions factors alongside comprehensive historical datasets.
 
-## APIs
+**Areas:** Energy · Electricity · CO2 · Emissions · Renewables · Oil · Statistics · Climate
 
-- **Real-Time Emissions Factors API** — Up-to-hourly CO2 intensity and emissions from the power sector, approximately 100 data points per country per day. Requires bearer token authentication via active subscription.
-- **Data Products API** — Programmatic access to purchased IEA data products including World Energy Balances, World Energy Statistics, Monthly Electricity Statistics, Energy Prices, and Emissions Factors packages.
+## International Energy Agency (IEA) on APIs.io
 
-## Authentication
+Everything profiled for International Energy Agency (IEA) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/iea/](https://apis.io/providers/iea/)** — or go straight to one of the APIs or properties below.
 
-All IEA API requests use Bearer token authentication. Tokens are managed in the user account under Settings > Releases API. Generating a new token revokes all previous tokens.
+### APIs (2)
 
-```
-Authorization: Bearer {your_token}
-```
+- [IEA Real-Time Emissions Factors API](https://apis.io/apis/iea/iea-real-time-emissions-factors-api/) — Provides up-to-hourly CO2 intensity and emissions data from the power sector for countries worldwide. Data is sourced from transmission system operators,…
+- [IEA Data Products API](https://apis.io/apis/iea/iea-data-products-api/) — Programmatic access to IEA's suite of purchased data products including World Energy Balances, World Energy Statistics, Monthly Electricity Statistics,…
 
-## Data Products
+### Published properties
 
-| Product | Coverage | Format |
-|---|---|---|
-| Real-Time Emissions Factors | Up-to-hourly, power sector, global | REST API (JSON) |
-| World Energy Balances | 156 countries, 1971–present | .Stat, CSV, SDMX |
-| World Energy Statistics | 156 countries + 35 regions, 1971–present | .Stat, CSV, SDMX |
-| Monthly Electricity Statistics | OECD+ countries, monthly | Free web + .Stat, SDMX |
-| Emissions Factors Package | 52 countries, 2015–present | .Stat, CSV |
-| Energy Prices | 150 countries, 1970–present | .Stat, CSV |
-| OECD Energy Prices and Taxes Quarterly | OECD countries, quarterly | .Stat, CSV |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Links
+#### Security (1)
 
-- **Website:** https://www.iea.org
-- **Documentation:** https://www.iea.org/documentation
-- **Data Products:** https://www.iea.org/data-and-statistics/data-sets
-- **Real-Time Emissions API:** https://www.iea.org/data-and-statistics/data-product/real-time-emissions-factors-api-access
-- **LinkedIn:** https://www.linkedin.com/company/international-energy-agency
-- **X / Twitter:** https://x.com/IEA
-- **Newsroom / Blog:** https://www.iea.org/newsroom
-- **Help Centre:** https://www.iea.org/help-centre/accessing-iea-products-and-services
-- **Sales Contact:** datasales@iea.org
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Iea Domain Security](https://apis.io/security/iea/iea-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Iea Plans Pricing](https://apis.io/plans/iea/iea-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Iea Rate Limits](https://apis.io/rate-limits/iea/iea-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Iea Finops](https://apis.io/finops/iea/iea-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.iea.org)
+- [Documentation](https://www.iea.org/documentation)
+- [Pricing](https://www.iea.org/data-and-statistics/data-sets)
+- [Blog](https://www.iea.org/newsroom)
+- [Status](https://www.iea.org/help-centre/accessing-iea-products-and-services)
+
+## API Evangelist rating
+
+**Kin Score 14.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/iea/](https://apis.io/providers/iea/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for International Energy Agency (IEA): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/iea/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
